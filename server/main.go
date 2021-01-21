@@ -25,7 +25,7 @@ func (l *Listener) GetLine(line []byte, reply *Reply) error {
 	return nil
 }
 func Validation(c Details) error{
-	if c.Name != "llchh" && c.Password != "sad"{
+	if c.Name != "llchh" || c.Password != "sad"{
 		return &InvalidData{}
 	}
 	return nil
